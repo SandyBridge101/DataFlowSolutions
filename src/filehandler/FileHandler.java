@@ -24,19 +24,21 @@ public class FileHandler {
     private static final Logger logger = LoggerUtil.getLogger(FileHandler.class);
 
 
-    public static void readFile(String filePath) throws Exception {
+    public static String readFile(String filePath) throws IOException, CsvException {
         logger.info("Reading file at " + filePath);
+        String text = "";
         if (filePath.endsWith(".txt")) {
-            readTextFile(filePath);
+            text=readTextFile(filePath);
         } else if (filePath.endsWith(".docx")) {
-            readDocxFile(filePath);
+            text=readDocxFile(filePath);
         } else if (filePath.endsWith(".pdf")) {
-            readPdfFile(filePath);
+            text=readPdfFile(filePath);
         } else if (filePath.endsWith(".csv")) {
-            readCsvFile(filePath);
+            text=readCsvFile(filePath);
         } else {
             logger.info("Unsupported file type.");
         }
+        return text;
     }
 
     private static String readTextFile(String path) throws IOException {
