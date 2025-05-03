@@ -19,13 +19,9 @@ public class UnitTests {
     private final DataManager dataManager=new DataManager();
     private String inputText;
 
-
-
     @Before
     public void setUp() {
-
         dataManager.clearAllEntries();
-
         inputText="Despite the heavy rain and flickering streetlights, Jenna continued walking through the quiet town, clutching the worn notebook that held her grandfather’s last invention.\n" +
                 " The pages, though water-stained, revealed sketches of a peculiar timekeeping device powered not by gears, but by magnetic pulses.\n" +
                 "She wasn't entirely sure what it meant, but her gut told her it was important—important enough that someone had tried to steal it the night before.\n" +
@@ -74,7 +70,6 @@ public class UnitTests {
     @Test
     public void matchExceptionTest(){
         String word="Kofi";
-
         assertThrows(MatchNotFoundException.class,()->{processor.findMatches(word,inputText);});
     }
 
