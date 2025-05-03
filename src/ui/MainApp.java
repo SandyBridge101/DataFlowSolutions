@@ -232,7 +232,7 @@ public class MainApp extends Application {
             System.out.println("Selected File: " + selectedFile.getAbsolutePath()+" "+selectedFile.getParent());
             fileName = selectedFile.getName();
             filePath = selectedFile.getAbsolutePath();
-            fileParent = selectedFile.getParent();
+            fileParent=selectedFile.getParent();
 
 
             int dotIndex = fileName.lastIndexOf('.');
