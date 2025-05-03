@@ -8,7 +8,6 @@ public class CustomDataObject {
     private String value;
     private int start;
     private int end;
-    private int frequency=0;
 
     public CustomDataObject(UUID id, String value, int start, int end) {
         this.id = id;
@@ -26,9 +25,6 @@ public class CustomDataObject {
     public void setStart(int start) { this.start = start; }
     public int getEnd() { return end; }
     public void setEnd(int end) { this.end = end; }
-
-    public int getFrequency() { return frequency; }
-    public void setFrequency(int frequency) { this.frequency = frequency; }
 
     @Override
     public boolean equals(Object o) {
