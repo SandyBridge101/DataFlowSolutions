@@ -27,14 +27,12 @@ import java.io.File;
 public class MainApp extends Application {
     private DataManager dataManager=new DataManager();
     private RegexProcessor processor=new RegexProcessor();
-    private TextAnalyzer textAnalyzer=new TextAnalyzer();
     private FileHandler fileHandler=new FileHandler();
     private ObservableList<CustomDataObject> dataObjects= FXCollections.observableArrayList();
     private ListView<CustomDataObject> dataObjectView=new ListView<>(dataObjects);
     private TextArea inputArea = new TextArea();
     private TextArea replaceTextArea = new TextArea();
     private TextField patternField = new TextField();
-    //TextArea resultArea = new TextArea();
     private Button matchButton = new Button("Find Matches");
     private Button refreshButton = new Button("Refresh");
     private Button replaceAllButton = new Button("Replace All");
