@@ -81,6 +81,7 @@ public class TextAnalyzer {
                 .orElse(0.0);
     }
 
+    /*
     // Example Usage
     public static void main(String[] args) {
         String sampleText = "The quick brown fox jumps over the lazy dog. " +
@@ -106,4 +107,6 @@ public class TextAnalyzer {
         System.out.println("\nSummary:");
         System.out.println(summary);
     }
+
+     */
 }

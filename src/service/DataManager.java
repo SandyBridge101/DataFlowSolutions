@@ -26,11 +26,6 @@ public class DataManager {
         return new ArrayList<>(dataObjects.values());
     }
 
-    public void setWordFrequencies(Map<String, Long> wordFrequencies) {
-        for (CustomDataObject customDataObject : dataObjects.values()) {
-            customDataObject.setFrequency(Math.toIntExact(wordFrequencies.get(customDataObject.getValue())));
-        }
-    }
 
 
     public void deleteEntry(UUID id) {

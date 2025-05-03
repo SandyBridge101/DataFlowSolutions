@@ -1,3 +1,4 @@
+/*
 package service;
 
 import java.util.Arrays;
@@ -21,3 +22,5 @@ public class TextProcessor {
         return sentences.length > 0 ? sentences[0] : input;
     }
 }
+
+ */

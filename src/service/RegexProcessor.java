@@ -43,6 +43,7 @@ public class RegexProcessor {
 
     }
 
+    /*
     //match
     public boolean checkMatch(String pattern, String input) {
         boolean matches = false;
@@ -51,6 +52,8 @@ public class RegexProcessor {
         }
         return matches;
     }
+
+     */
 
     //replace
     public String replaceMatches(String pattern, String replacement, String input) throws InvalidInputException {
@@ -106,7 +109,7 @@ public class RegexProcessor {
         String replacement="";
         StringBuilder sb = new StringBuilder(original);
         try {
-            sb.replace(start, end, replacement != null ? replacement : "");
+            sb.replace(start, end, replacement);
 
             for (CustomDataObject customDataObject : dataManager.getDataObjects()) {
                 if(customDataObject.getStart() == start && customDataObject.getEnd() == end) {

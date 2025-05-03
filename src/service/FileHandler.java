@@ -5,6 +5,7 @@ import java.nio.file.*;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class FileHandler {
     public String readFile(String path) throws IOException {
         return new String(Files.readAllBytes(Paths.get(path)));
@@ -26,3 +27,4 @@ public class FileHandler {
         return contents;
     }
 }
+
